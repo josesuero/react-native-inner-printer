@@ -1,7 +1,7 @@
 
 {
   "name": "react-native-inner-printer",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "React native library to print in android tablets with embedded printers",
   "main": "index.js",
   "scripts": {

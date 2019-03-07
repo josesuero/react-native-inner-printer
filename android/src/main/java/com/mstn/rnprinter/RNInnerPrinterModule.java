@@ -64,7 +64,7 @@ public class RNInnerPrinterModule extends ReactContextBaseJavaModule {
 
   @ReactMethod
     public void print(String content, int size,  boolean isBold, boolean isUnderline){
-      String utf8Str = new StringBuilder(content).append("\n\n\n\n").toString();
+      String utf8Str = new StringBuilder(content).toString();
       byte[] btUTF8 = new byte[0];
       try {
 

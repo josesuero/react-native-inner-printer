@@ -55,23 +55,23 @@ public class BluetoothUtil {
     public static boolean connectBlueTooth(Context context) {
         if (bluetoothSocket == null) {
             if (getBTAdapter() == null) {
-                Toast.makeText(context, R.string.toast_3, Toast.LENGTH_SHORT).show();
+                Toast.makeText(context, "Bluetooth device is unavailable", Toast.LENGTH_SHORT).show();
                 return false;
             }
             if (!getBTAdapter().isEnabled()) {
-                Toast.makeText(context, R.string.toast_4, Toast.LENGTH_SHORT).show();
+                Toast.makeText(context, "Bluetooth device not detected. Please open Bluetooth!", Toast.LENGTH_SHORT).show();
                 return false;
             }
             BluetoothDevice device;
             if ((device = getDevice(getBTAdapter())) == null) {
-                Toast.makeText(context, R.string.toast_5, Toast.LENGTH_SHORT).show();
+                Toast.makeText(context, "Not found inner printer", Toast.LENGTH_SHORT).show();
                 return false;
             }
 
             try {
                 bluetoothSocket = getSocket(device);
             } catch (IOException e) {
-                Toast.makeText(context, R.string.toast_6, Toast.LENGTH_SHORT).show();
+                Toast.makeText(context, "Bluetooth connection failed", Toast.LENGTH_SHORT).show();
                 return false;
             }
         }

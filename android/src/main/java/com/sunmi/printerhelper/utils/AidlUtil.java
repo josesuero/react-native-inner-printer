@@ -112,7 +112,7 @@ public class AidlUtil {
 
     public void setDarkness(int index) {
         if (woyouService == null) {
-            Toast.makeText(context, R.string.toast_2, Toast.LENGTH_LONG).show();
+            Toast.makeText(context, "The service has been disconnected!", Toast.LENGTH_LONG).show();
             return;
         }
 
@@ -132,7 +132,7 @@ public class AidlUtil {
      */
     public List<String> getPrinterInfo(PrinterCallback printerCallback1, PrinterCallback printerCallback2) {
         if (woyouService == null) {
-            Toast.makeText(context, R.string.toast_2, Toast.LENGTH_LONG).show();
+            Toast.makeText(context, "The service has been disconnected!", Toast.LENGTH_LONG).show();
             return null;
         }
 
@@ -170,7 +170,7 @@ public class AidlUtil {
      */
     public void initPrinter() {
         if (woyouService == null) {
-            Toast.makeText(context, R.string.toast_2, Toast.LENGTH_LONG).show();
+            Toast.makeText(context, "The service has been disconnected!", Toast.LENGTH_LONG).show();
             return;
         }
 
@@ -186,7 +186,7 @@ public class AidlUtil {
      */
     public void printQr(String data, int modulesize, int errorlevel) {
         if (woyouService == null) {
-            Toast.makeText(context, R.string.toast_2, Toast.LENGTH_LONG).show();
+            Toast.makeText(context, "The service has been disconnected!", Toast.LENGTH_LONG).show();
             return;
         }
 
@@ -205,7 +205,7 @@ public class AidlUtil {
      */
     public void printBarCode(String data, int symbology, int height, int width, int textposition) {
         if (woyouService == null) {
-            Toast.makeText(context, R.string.toast_2, Toast.LENGTH_LONG).show();
+            Toast.makeText(context, "The service has been disconnected!", Toast.LENGTH_LONG).show();
             return;
         }
 
@@ -223,7 +223,7 @@ public class AidlUtil {
      */
     public void printText(String content, float size, boolean isBold, boolean isUnderLine) {
         if (woyouService == null) {
-            Toast.makeText(context, R.string.toast_2, Toast.LENGTH_LONG).show();
+            Toast.makeText(context, "The service has been disconnected!", Toast.LENGTH_LONG).show();
             return;
         }
 
@@ -253,7 +253,7 @@ public class AidlUtil {
      */
     public void printBitmap(Bitmap bitmap) {
         if (woyouService == null) {
-            Toast.makeText(context, R.string.toast_2, Toast.LENGTH_LONG).show();
+            Toast.makeText(context, "The service has been disconnected!", Toast.LENGTH_LONG).show();
             return;
         }
 
@@ -319,7 +319,7 @@ public class AidlUtil {
      */
     public void print3Line(){
         if (woyouService == null) {
-            Toast.makeText(context, R.string.toast_2, Toast.LENGTH_LONG).show();
+            Toast.makeText(context, "The service has been disconnected!", Toast.LENGTH_LONG).show();
             return;
         }
 
@@ -333,7 +333,7 @@ public class AidlUtil {
 
     public void sendRawData(byte[] data) {
         if (woyouService == null) {
-            Toast.makeText(context, R.string.toast_2, Toast.LENGTH_LONG).show();
+            Toast.makeText(context, "The service has been disconnected!", Toast.LENGTH_LONG).show();
             return;
         }
 
@@ -346,7 +346,7 @@ public class AidlUtil {
 
     public void sendRawDatabyBuffer(byte[] data, ICallback iCallback){
         if (woyouService == null) {
-            Toast.makeText(context, R.string.toast_2, Toast.LENGTH_LONG).show();
+            Toast.makeText(context, "The service has been disconnected!", Toast.LENGTH_LONG).show();
             return;
         }
 
